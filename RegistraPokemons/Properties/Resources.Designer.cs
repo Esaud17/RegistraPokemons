@@ -63,6 +63,16 @@ namespace RegistraPokemons.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dollar {
+            get {
+                object obj = ResourceManager.GetObject("dollar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Pokeball {
             get {
                 object obj = ResourceManager.GetObject("Pokeball", resourceCulture);
@@ -86,6 +96,26 @@ namespace RegistraPokemons.Properties {
         internal static System.Drawing.Bitmap pokedex1 {
             get {
                 object obj = ResourceManager.GetObject("pokedex1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pokedexia {
+            get {
+                object obj = ResourceManager.GetObject("pokedexia", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Pokemon {
+            get {
+                object obj = ResourceManager.GetObject("Pokemon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

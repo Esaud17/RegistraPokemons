@@ -36,8 +36,8 @@ namespace RegistraPokemons
             using (var response = request.GetResponse())
             using (var stream = response.GetResponseStream())
             {
-                pictureBox1.Image = Bitmap.FromStream(stream);
-                pictureBox3.Image = pictureBox1.Image;
+                ptb_pokemon.Image = Bitmap.FromStream(stream);
+               
 
             }
 
@@ -45,10 +45,10 @@ namespace RegistraPokemons
 
            Pokemon pokestatic = GET(json);
 
-           textBox1.Text= pokestatic.name;
-           textBox2.Text = pokestatic.id.ToString();
-            textBox3.Text = pokestatic.types[0].type.name;
-           textBox4.Text = pokestatic.base_experience.ToString();
+           lbl_nametext.Text= pokestatic.name;
+           lbl_idtext.Text = pokestatic.id.ToString();
+           lbl_tipotext.Text = pokestatic.types[0].type.name;
+           lbl_niveltext.Text = pokestatic.base_experience.ToString();
 
 
         }

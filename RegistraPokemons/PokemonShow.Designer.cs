@@ -29,329 +29,256 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PokemonShow));
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Numero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button3 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.btn_src = new System.Windows.Forms.Button();
+            this.ptb_pokemon = new System.Windows.Forms.PictureBox();
+            this.lbl_pokemon = new System.Windows.Forms.Label();
+            this.lbl_nametext = new System.Windows.Forms.Label();
+            this.lbl_idtext = new System.Windows.Forms.Label();
+            this.lbl_id = new System.Windows.Forms.Label();
+            this.lbl_niveltext = new System.Windows.Forms.Label();
+            this.lbl_nivel = new System.Windows.Forms.Label();
+            this.lbl_tipo = new System.Windows.Forms.Label();
+            this.lbl_tipotext = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.lbl_pokeballs = new System.Windows.Forms.Label();
+            this.lbl_coins = new System.Windows.Forms.Label();
+            this.ptb_pokelogo = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_pokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_pokelogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btn_src
             // 
-            this.button1.Location = new System.Drawing.Point(15, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 38);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Buscar Pokemon";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_src.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btn_src.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_src.Font = new System.Drawing.Font("Racer", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_src.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_src.Location = new System.Drawing.Point(12, 388);
+            this.btn_src.Name = "btn_src";
+            this.btn_src.Size = new System.Drawing.Size(124, 38);
+            this.btn_src.TabIndex = 1;
+            this.btn_src.Text = "Buscar";
+            this.btn_src.UseVisualStyleBackColor = false;
+            this.btn_src.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // ptb_pokemon
             // 
-            this.button2.Location = new System.Drawing.Point(15, 60);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(124, 38);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Capturar Pokemon";
-            this.button2.UseVisualStyleBackColor = true;
+            this.ptb_pokemon.BackColor = System.Drawing.Color.Transparent;
+            this.ptb_pokemon.Image = global::RegistraPokemons.Properties.Resources.Pokeball;
+            this.ptb_pokemon.Location = new System.Drawing.Point(178, 183);
+            this.ptb_pokemon.Name = "ptb_pokemon";
+            this.ptb_pokemon.Size = new System.Drawing.Size(97, 98);
+            this.ptb_pokemon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptb_pokemon.TabIndex = 3;
+            this.ptb_pokemon.TabStop = false;
             // 
-            // label1
+            // lbl_pokemon
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(65, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(64, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Disponibles ";
+            this.lbl_pokemon.AutoSize = true;
+            this.lbl_pokemon.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_pokemon.Font = new System.Drawing.Font("Racer", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pokemon.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl_pokemon.Location = new System.Drawing.Point(18, 118);
+            this.lbl_pokemon.Name = "lbl_pokemon";
+            this.lbl_pokemon.Size = new System.Drawing.Size(76, 13);
+            this.lbl_pokemon.TabIndex = 4;
+            this.lbl_pokemon.Text = "Pokemon:";
             // 
-            // label2
+            // lbl_nametext
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(54, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 24);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "0000000";
+            this.lbl_nametext.AutoSize = true;
+            this.lbl_nametext.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_nametext.Font = new System.Drawing.Font("Racer", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nametext.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lbl_nametext.Location = new System.Drawing.Point(32, 142);
+            this.lbl_nametext.Name = "lbl_nametext";
+            this.lbl_nametext.Size = new System.Drawing.Size(9, 13);
+            this.lbl_nametext.TabIndex = 5;
+            this.lbl_nametext.Text = ".";
             // 
-            // groupBox1
+            // lbl_idtext
             // 
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.pictureBox2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(270, 65);
-            this.groupBox1.TabIndex = 6;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Pokebolas";
+            this.lbl_idtext.AutoSize = true;
+            this.lbl_idtext.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_idtext.Font = new System.Drawing.Font("Racer", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_idtext.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lbl_idtext.Location = new System.Drawing.Point(351, 302);
+            this.lbl_idtext.Name = "lbl_idtext";
+            this.lbl_idtext.Size = new System.Drawing.Size(9, 13);
+            this.lbl_idtext.TabIndex = 7;
+            this.lbl_idtext.Text = ".";
             // 
-            // groupBox2
+            // lbl_id
             // 
-            this.groupBox2.Controls.Add(this.pictureBox1);
-            this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.button2);
-            this.groupBox2.Location = new System.Drawing.Point(12, 83);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(270, 105);
-            this.groupBox2.TabIndex = 7;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Mundo Pokemon";
+            this.lbl_id.AutoSize = true;
+            this.lbl_id.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_id.Font = new System.Drawing.Font("Racer", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_id.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl_id.Location = new System.Drawing.Point(325, 302);
+            this.lbl_id.Name = "lbl_id";
+            this.lbl_id.Size = new System.Drawing.Size(20, 13);
+            this.lbl_id.TabIndex = 6;
+            this.lbl_id.Text = "ID:";
             // 
-            // groupBox3
+            // lbl_niveltext
             // 
-            this.groupBox3.Controls.Add(this.dataGridView1);
-            this.groupBox3.Location = new System.Drawing.Point(12, 194);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(270, 260);
-            this.groupBox3.TabIndex = 8;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Mis Pokemons";
+            this.lbl_niveltext.AutoSize = true;
+            this.lbl_niveltext.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_niveltext.Font = new System.Drawing.Font("Racer", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_niveltext.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lbl_niveltext.Location = new System.Drawing.Point(351, 345);
+            this.lbl_niveltext.Name = "lbl_niveltext";
+            this.lbl_niveltext.Size = new System.Drawing.Size(9, 13);
+            this.lbl_niveltext.TabIndex = 9;
+            this.lbl_niveltext.Text = ".";
             // 
-            // dataGridView1
+            // lbl_nivel
             // 
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Numero,
-            this.Nombre});
-            this.dataGridView1.Location = new System.Drawing.Point(6, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(258, 235);
-            this.dataGridView1.TabIndex = 0;
+            this.lbl_nivel.AutoSize = true;
+            this.lbl_nivel.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_nivel.Font = new System.Drawing.Font("Racer", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nivel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl_nivel.Location = new System.Drawing.Point(296, 345);
+            this.lbl_nivel.Name = "lbl_nivel";
+            this.lbl_nivel.Size = new System.Drawing.Size(49, 13);
+            this.lbl_nivel.TabIndex = 8;
+            this.lbl_nivel.Text = "NIVEL:";
             // 
-            // Numero
+            // lbl_tipo
             // 
-            this.Numero.HeaderText = "Numero";
-            this.Numero.Name = "Numero";
+            this.lbl_tipo.AutoSize = true;
+            this.lbl_tipo.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_tipo.Font = new System.Drawing.Font("Racer", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_tipo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lbl_tipo.Location = new System.Drawing.Point(307, 388);
+            this.lbl_tipo.Name = "lbl_tipo";
+            this.lbl_tipo.Size = new System.Drawing.Size(38, 13);
+            this.lbl_tipo.TabIndex = 10;
+            this.lbl_tipo.Text = "TIPO:";
             // 
-            // Nombre
+            // lbl_tipotext
             // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(154, 16);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 38);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Comprar";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.BackgroundImage = global::RegistraPokemons.Properties.Resources.pokedex1;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBox3);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.pictureBox3);
-            this.panel1.Location = new System.Drawing.Point(288, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(317, 436);
-            this.panel1.TabIndex = 9;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Location = new System.Drawing.Point(20, 343);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(62, 13);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Experiencia";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(23, 359);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(268, 20);
-            this.textBox4.TabIndex = 11;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(205, 15);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(104, 20);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Información";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Location = new System.Drawing.Point(20, 304);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(28, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "Tipo";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(23, 320);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(268, 20);
-            this.textBox3.TabIndex = 8;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(20, 265);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Numero";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(23, 281);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(268, 20);
-            this.textBox2.TabIndex = 6;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(20, 226);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Nombre";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(23, 242);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(268, 20);
-            this.textBox1.TabIndex = 4;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox3.Image = global::RegistraPokemons.Properties.Resources.whoisit;
-            this.pictureBox3.Location = new System.Drawing.Point(205, 70);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(88, 82);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 3;
-            this.pictureBox3.TabStop = false;
+            this.lbl_tipotext.AutoSize = true;
+            this.lbl_tipotext.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_tipotext.Font = new System.Drawing.Font("Racer", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_tipotext.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.lbl_tipotext.Location = new System.Drawing.Point(351, 388);
+            this.lbl_tipotext.Name = "lbl_tipotext";
+            this.lbl_tipotext.Size = new System.Drawing.Size(9, 13);
+            this.lbl_tipotext.TabIndex = 11;
+            this.lbl_tipotext.Text = ".";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = global::RegistraPokemons.Properties.Resources.whoisit;
-            this.pictureBox1.Location = new System.Drawing.Point(167, 16);
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::RegistraPokemons.Properties.Resources.Pokeball;
+            this.pictureBox1.Location = new System.Drawing.Point(2, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(88, 82);
+            this.pictureBox1.Size = new System.Drawing.Size(29, 26);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabIndex = 12;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::RegistraPokemons.Properties.Resources.Pokeball;
-            this.pictureBox2.Location = new System.Drawing.Point(6, 19);
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::RegistraPokemons.Properties.Resources.dollar;
+            this.pictureBox2.Location = new System.Drawing.Point(2, 55);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(42, 38);
+            this.pictureBox2.Size = new System.Drawing.Size(29, 26);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 3;
+            this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
+            // 
+            // lbl_pokeballs
+            // 
+            this.lbl_pokeballs.AutoSize = true;
+            this.lbl_pokeballs.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_pokeballs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_pokeballs.ForeColor = System.Drawing.Color.OrangeRed;
+            this.lbl_pokeballs.Location = new System.Drawing.Point(32, 12);
+            this.lbl_pokeballs.Name = "lbl_pokeballs";
+            this.lbl_pokeballs.Size = new System.Drawing.Size(63, 15);
+            this.lbl_pokeballs.TabIndex = 14;
+            this.lbl_pokeballs.Text = "0000000";
+            // 
+            // lbl_coins
+            // 
+            this.lbl_coins.AutoSize = true;
+            this.lbl_coins.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_coins.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_coins.ForeColor = System.Drawing.Color.OrangeRed;
+            this.lbl_coins.Location = new System.Drawing.Point(31, 55);
+            this.lbl_coins.Name = "lbl_coins";
+            this.lbl_coins.Size = new System.Drawing.Size(63, 15);
+            this.lbl_coins.TabIndex = 15;
+            this.lbl_coins.Text = "0000000";
+            // 
+            // ptb_pokelogo
+            // 
+            this.ptb_pokelogo.BackColor = System.Drawing.Color.Transparent;
+            this.ptb_pokelogo.Image = global::RegistraPokemons.Properties.Resources.Pokemon;
+            this.ptb_pokelogo.Location = new System.Drawing.Point(128, 12);
+            this.ptb_pokelogo.Name = "ptb_pokelogo";
+            this.ptb_pokelogo.Size = new System.Drawing.Size(195, 72);
+            this.ptb_pokelogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptb_pokelogo.TabIndex = 16;
+            this.ptb_pokelogo.TabStop = false;
             // 
             // PokemonShow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(610, 455);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.BackgroundImage = global::RegistraPokemons.Properties.Resources.pokedexia;
+            this.ClientSize = new System.Drawing.Size(456, 438);
+            this.Controls.Add(this.ptb_pokelogo);
+            this.Controls.Add(this.lbl_coins);
+            this.Controls.Add(this.lbl_pokeballs);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.lbl_tipotext);
+            this.Controls.Add(this.lbl_tipo);
+            this.Controls.Add(this.lbl_niveltext);
+            this.Controls.Add(this.lbl_nivel);
+            this.Controls.Add(this.lbl_idtext);
+            this.Controls.Add(this.lbl_id);
+            this.Controls.Add(this.lbl_nametext);
+            this.Controls.Add(this.lbl_pokemon);
+            this.Controls.Add(this.btn_src);
+            this.Controls.Add(this.ptb_pokemon);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "PokemonShow";
             this.Text = "POKEDEX 2.0";
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_pokemon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptb_pokelogo)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
+        private System.Windows.Forms.Button btn_src;
+        private System.Windows.Forms.PictureBox ptb_pokemon;
+        private System.Windows.Forms.Label lbl_pokemon;
+        private System.Windows.Forms.Label lbl_nametext;
+        private System.Windows.Forms.Label lbl_idtext;
+        private System.Windows.Forms.Label lbl_id;
+        private System.Windows.Forms.Label lbl_niveltext;
+        private System.Windows.Forms.Label lbl_nivel;
+        private System.Windows.Forms.Label lbl_tipo;
+        private System.Windows.Forms.Label lbl_tipotext;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Numero;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label lbl_pokeballs;
+        private System.Windows.Forms.Label lbl_coins;
+        private System.Windows.Forms.PictureBox ptb_pokelogo;
     }
 }
 
