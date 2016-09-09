@@ -39,7 +39,7 @@ namespace RegistraPokemons
                     valor = 720;
                 }
             } else {
-                valor = aletorio.Next(1, 250);
+                valor = aletorio.Next(1, 720);
             }
 
             string file = String.Format("{0}.png", valor.ToString());
