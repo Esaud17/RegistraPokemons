@@ -235,9 +235,11 @@
             this.txb_pokemon.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.txb_pokemon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txb_pokemon.Location = new System.Drawing.Point(142, 406);
+            this.txb_pokemon.MaxLength = 3;
             this.txb_pokemon.Name = "txb_pokemon";
             this.txb_pokemon.Size = new System.Drawing.Size(122, 20);
             this.txb_pokemon.TabIndex = 17;
+            this.txb_pokemon.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txb_pokemon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_pokemon_KeyPress);
             // 
             // label1
