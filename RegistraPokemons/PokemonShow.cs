@@ -32,6 +32,12 @@ namespace RegistraPokemons
 
             if (!string.IsNullOrWhiteSpace(this.txb_pokemon.Text)) {
                 valor = Int32.Parse(this.txb_pokemon.Text);
+                if (valor>720)
+                {
+                    MessageBox.Show(" Este pokedex cuenta con: \n\n\n  -> 720 pokémons");
+                    this.txb_pokemon.Text = "";
+                    valor = 720;
+                }
             } else {
                 valor = aletorio.Next(1, 250);
             }
@@ -91,10 +97,10 @@ namespace RegistraPokemons
         }
 
         private void txb_pokemon_KeyPress(object sender, KeyPressEventArgs e)
-        {
+        {  
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
             {
-                e.Handled = true;
+                    e.Handled = true;     
             }
         }
     }

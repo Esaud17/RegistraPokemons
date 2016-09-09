@@ -1,10 +1,6 @@
 c:\users\oerl90\documents\visual studio 2015\Projects\RegistraPokemons\RegistraPokemons\bin\Debug\RegistraPokemons.exe.config
 c:\users\oerl90\documents\visual studio 2015\Projects\RegistraPokemons\RegistraPokemons\bin\Debug\RegistraPokemons.exe
 c:\users\oerl90\documents\visual studio 2015\Projects\RegistraPokemons\RegistraPokemons\bin\Debug\RegistraPokemons.pdb
-c:\users\oerl90\documents\visual studio 2015\Projects\RegistraPokemons\RegistraPokemons\bin\Debug\EntityFramework.dll
-c:\users\oerl90\documents\visual studio 2015\Projects\RegistraPokemons\RegistraPokemons\bin\Debug\EntityFramework.SqlServer.dll
-c:\users\oerl90\documents\visual studio 2015\Projects\RegistraPokemons\RegistraPokemons\bin\Debug\EntityFramework.xml
-c:\users\oerl90\documents\visual studio 2015\Projects\RegistraPokemons\RegistraPokemons\bin\Debug\EntityFramework.SqlServer.xml
 c:\users\oerl90\documents\visual studio 2015\Projects\RegistraPokemons\RegistraPokemons\obj\Debug\RegistraPokemons.csprojResolveAssemblyReference.cache
 c:\users\oerl90\documents\visual studio 2015\Projects\RegistraPokemons\RegistraPokemons\obj\Debug\RegistraPokemons.Properties.Resources.resources
 c:\users\oerl90\documents\visual studio 2015\Projects\RegistraPokemons\RegistraPokemons\obj\Debug\RegistraPokemons.csproj.GenerateResource.Cache
