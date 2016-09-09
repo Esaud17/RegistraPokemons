@@ -44,6 +44,8 @@
             this.lbl_pokeballs = new System.Windows.Forms.Label();
             this.lbl_coins = new System.Windows.Forms.Label();
             this.ptb_pokelogo = new System.Windows.Forms.PictureBox();
+            this.txb_pokemon = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ptb_pokemon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -85,7 +87,7 @@
             this.lbl_pokemon.Name = "lbl_pokemon";
             this.lbl_pokemon.Size = new System.Drawing.Size(76, 13);
             this.lbl_pokemon.TabIndex = 4;
-            this.lbl_pokemon.Text = "Pokemon:";
+            this.lbl_pokemon.Text = "Pokémon:";
             // 
             // lbl_nametext
             // 
@@ -228,12 +230,36 @@
             this.ptb_pokelogo.TabIndex = 16;
             this.ptb_pokelogo.TabStop = false;
             // 
+            // txb_pokemon
+            // 
+            this.txb_pokemon.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.txb_pokemon.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txb_pokemon.Location = new System.Drawing.Point(142, 406);
+            this.txb_pokemon.Name = "txb_pokemon";
+            this.txb_pokemon.Size = new System.Drawing.Size(122, 20);
+            this.txb_pokemon.TabIndex = 17;
+            this.txb_pokemon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txb_pokemon_KeyPress);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(142, 390);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 13);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "# Pokémon";
+            // 
             // PokemonShow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::RegistraPokemons.Properties.Resources.pokedexia;
             this.ClientSize = new System.Drawing.Size(456, 438);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txb_pokemon);
             this.Controls.Add(this.ptb_pokelogo);
             this.Controls.Add(this.lbl_coins);
             this.Controls.Add(this.lbl_pokeballs);
@@ -279,6 +305,8 @@
         private System.Windows.Forms.Label lbl_pokeballs;
         private System.Windows.Forms.Label lbl_coins;
         private System.Windows.Forms.PictureBox ptb_pokelogo;
+        private System.Windows.Forms.TextBox txb_pokemon;
+        private System.Windows.Forms.Label label1;
     }
 }
 

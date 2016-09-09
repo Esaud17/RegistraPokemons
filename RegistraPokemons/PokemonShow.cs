@@ -26,9 +26,16 @@ namespace RegistraPokemons
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             Random aletorio = new Random();
+            int valor = 0;
 
-            int valor = aletorio.Next(1, 250);
+            if (!string.IsNullOrWhiteSpace(this.txb_pokemon.Text)) {
+                valor = Int32.Parse(this.txb_pokemon.Text);
+            } else {
+                valor = aletorio.Next(1, 250);
+            }
+
             string file = String.Format("{0}.png", valor.ToString());
             string url = String.Format("http://veekun.com/dex/media/pokemon/main-sprites/x-y/{0}", file);
 
@@ -50,6 +57,10 @@ namespace RegistraPokemons
            lbl_tipotext.Text = pokestatic.types[0].type.name;
            lbl_niveltext.Text = pokestatic.base_experience.ToString();
 
+           lbl_coins.Text = aletorio.Next(1, 10).ToString();
+           lbl_pokeballs.Text = aletorio.Next(1, 10).ToString();
+
+           this.txb_pokemon.Text = "";
 
         }
 
@@ -76,6 +87,14 @@ namespace RegistraPokemons
                     // log errorText
                 }
                 throw;
+            }
+        }
+
+        private void txb_pokemon_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.'))
+            {
+                e.Handled = true;
             }
         }
     }
