@@ -9,3 +9,14 @@ c:\users\oerl90\documents\visual studio 2015\Projects\RegistraPokemons\RegistraP
 C:\Users\OERL90\documents\visual studio 2015\Projects\RegistraPokemons\RegistraPokemons\obj\Debug\RegistraPokemons.PokemonShow.resources
 C:\Users\OERL90\documents\visual studio 2015\Projects\RegistraPokemons\RegistraPokemons\bin\Debug\Newtonsoft.Json.dll
 C:\Users\OERL90\documents\visual studio 2015\Projects\RegistraPokemons\RegistraPokemons\bin\Debug\Newtonsoft.Json.xml
+D:\Projectos Softwares\Visual Studio 2015\Projects\RegistraPokemons\RegistraPokemons\bin\Debug\RegistraPokemons.exe.config
+D:\Projectos Softwares\Visual Studio 2015\Projects\RegistraPokemons\RegistraPokemons\obj\Debug\RegistraPokemons.exe
+D:\Projectos Softwares\Visual Studio 2015\Projects\RegistraPokemons\RegistraPokemons\obj\Debug\RegistraPokemons.pdb
+D:\Projectos Softwares\Visual Studio 2015\Projects\RegistraPokemons\RegistraPokemons\bin\Debug\RegistraPokemons.exe
+D:\Projectos Softwares\Visual Studio 2015\Projects\RegistraPokemons\RegistraPokemons\bin\Debug\RegistraPokemons.pdb
+D:\Projectos Softwares\Visual Studio 2015\Projects\RegistraPokemons\RegistraPokemons\bin\Debug\Newtonsoft.Json.dll
+D:\Projectos Softwares\Visual Studio 2015\Projects\RegistraPokemons\RegistraPokemons\bin\Debug\Newtonsoft.Json.xml
+D:\Projectos Softwares\Visual Studio 2015\Projects\RegistraPokemons\RegistraPokemons\obj\Debug\RegistraPokemons.csprojResolveAssemblyReference.cache
+D:\Projectos Softwares\Visual Studio 2015\Projects\RegistraPokemons\RegistraPokemons\obj\Debug\RegistraPokemons.PokemonShow.resources
+D:\Projectos Softwares\Visual Studio 2015\Projects\RegistraPokemons\RegistraPokemons\obj\Debug\RegistraPokemons.Properties.Resources.resources
+D:\Projectos Softwares\Visual Studio 2015\Projects\RegistraPokemons\RegistraPokemons\obj\Debug\RegistraPokemons.csproj.GenerateResource.Cache
